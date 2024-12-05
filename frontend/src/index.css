@@ -1,0 +1,135 @@
+:root {
+  --primary-bg: #121212; /* Fondo oscuro */
+  --secondary-bg: #1a1a1a; /* Gris oscuro */
+  --accent-color: #6f4f37; /* Marrón oscuro */
+  --hover-bg: #4a4a4a; /* Gris intermedio para hover */
+  --button-bg: #333; /* Fondo de botones oscuro */
+  --button-hover-bg: #4a4a4a; /* Fondo de botones al pasar el cursor */
+  --button-text-color: #fff; /* Blanco para texto de botones */
+  --input-bg: #2b2b2b; /* Fondo oscuro para inputs */
+  --input-border: #3c3c3c; /* Gris para los bordes de los inputs */
+  --text-color: #e0e0e0; /* Gris claro para texto */
+}
+
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: var(--text-color);
+  background-color: var(--primary-bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: var(--accent-color);
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: var(--button-text-color);
+}
+
+body {
+  margin: 0;
+  padding: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Cambiado para no centrar todo el contenido */
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--primary-bg);
+  overflow: auto; /* Permitir desplazamiento */
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: inherit;
+}
+
+button {
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--button-bg);
+  color: var(--button-text-color);
+  cursor: pointer;
+  transition: background-color 0.25s, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--button-hover-bg);
+  transform: scale(1.05);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+    color: #333;
+  }
+
+  body {
+    background-color: #ffffff;
+  }
+}
+
+input, select {
+  padding: 0.8em;
+  border-radius: 8px;
+  border: 1px solid #444;
+  margin-bottom: 1em;
+  width: 100%;
+  font-size: 1em;
+  background-color: var(--input-bg);
+  color: var(--button-text-color);
+}
+
+input:focus,
+select:focus {
+  background-color: var(--hover-bg);
+  border-color: #fff;
+}
+
+form {
+  background-color: var(--secondary-bg);
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+.form-group {
+  margin-bottom: 1.5em;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card {
+  background-color: var(--secondary-bg);
+  border-radius: 10px;
+  color: var(--button-text-color);
+}
