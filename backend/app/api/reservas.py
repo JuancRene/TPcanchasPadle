@@ -11,6 +11,8 @@ def create_reserva(reserva: ReservaCreate, db: Session = Depends(get_db)):
     cancha = db.query(Cancha).filter(Cancha.id == reserva.cancha_id).first()
     if not cancha:
         raise HTTPException(status_code=404, detail="Cancha no encontrada")
+    elif reserva.duracion < 30:
+        raise HTTPException(status_code=400, detail="La duración mínima de una reserva es de minimo 30 minutos")
     from datetime import datetime, timedelta
     inicio_nueva = datetime.combine(reserva.dia, reserva.hora)
     fin_nueva = inicio_nueva + timedelta(minutes=reserva.duracion)
