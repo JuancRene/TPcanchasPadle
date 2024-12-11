@@ -1,15 +1,15 @@
 :root {
-  --primary-color: #6f4f37; /* Marrón oscuro */
-  --secondary-color: #424242; /* Gris oscuro */
-  --hover-color: #555; /* Gris medio */
-  --input-bg: #2b2b2b; /* Gris oscuro para inputs */
-  --input-border: #3c3c3c; /* Gris más claro para bordes */
-  --light-bg: #121212; /* Fondo oscuro */
-  --text-color: #e0e0e0; /* Gris claro para texto */
-  --button-bg: #3b3b3b; /* Fondo oscuro para botones */
-  --button-text-color: #fff; /* Blanco para texto de botones */
-  --button-hover-bg: #4a4a4a; /* Gris intermedio para hover de botones */
-  --button-active-bg: #3c3c3c; /* Gris oscuro para cuando el botón está activo */
+  --primary-color: #6f4f37; 
+  --secondary-color: #424242; 
+  --hover-color: #555; 
+  --input-bg: #2b2b2b; 
+  --input-border: #3c3c3c; 
+  --light-bg: #121212; 
+  --text-color: #e0e0e0;
+  --button-bg: #3b3b3b; 
+  --button-text-color: #fff; 
+  --button-hover-bg: #4a4a4a; 
+  --button-active-bg: #3c3c3c; 
 }
 
 #root {
@@ -89,7 +89,7 @@ button.btn-primary {
 }
 
 button.btn-primary:hover {
-  background-color: #5a3e2f; /* Marrón oscuro para el hover */
+  background-color: #5a3e2f;
 }
 
 button.btn-danger {

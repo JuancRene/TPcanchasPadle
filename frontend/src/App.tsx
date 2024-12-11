@@ -5,8 +5,7 @@ import Reservas from "./pages/Reservas";
 import "./style.css";  
 
 function App() {
-  const [mostrarFormulario, setMostrarFormulario] = useState(true); // Controla la vista del formulario y las reservas
-
+  const [mostrarFormulario, setMostrarFormulario] = useState(true); 
   return (
     <Container className="mt-5">
       <Card className="mb-4">
@@ -24,7 +23,7 @@ function App() {
             </Col>
           </Row>
 
-          {/* Condicional para mostrar el formulario o las reservas */}
+
           {mostrarFormulario ? (
             <ReservaForm />
           ) : (

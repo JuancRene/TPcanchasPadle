@@ -1,17 +1,17 @@
 :root {
-  --primary-color: #6f4f37; /* Marrón oscuro */
-  --secondary-color: #424242; /* Gris oscuro */
-  --hover-color: #555; /* Gris medio */
-  --input-bg: #2b2b2b; /* Gris oscuro para inputs */
-  --input-border: #3c3c3c; /* Gris más claro para bordes */
-  --light-bg: #121212; /* Fondo oscuro */
-  --text-color: #e0e0e0; /* Gris claro para texto */
-  --button-bg: #3b3b3b; /* Fondo oscuro para botones */
-  --button-text-color: #fff; /* Blanco para texto de botones */
-  --button-hover-bg: #4a4a4a; /* Gris intermedio para hover de botones */
-  --button-active-bg: #3c3c3c; /* Gris oscuro para cuando el botón está activo */
-  --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
-  --focus-box-shadow: 0 0 15px var(--primary-color); /* Sombra en foco */
+  --primary-color: #6f4f37; 
+  --secondary-color: #424242; 
+  --hover-color: #555; 
+  --input-bg: #2b2b2b; 
+  --input-border: #3c3c3c; 
+  --light-bg: #121212; 
+  --text-color: #e0e0e0; 
+  --button-bg: #3b3b3b; 
+  --button-text-color: #fff; 
+  --button-hover-bg: #4a4a4a; 
+  --button-active-bg: #3c3c3c; 
+  --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  --focus-box-shadow: 0 0 15px var(--primary-color); 
 }
 
 body {
@@ -121,55 +121,54 @@ button {
   transition: all 0.3s ease;
   width: 100%;
   max-width: 300px;
-  background-color: var(--button-bg); /* Fondo oscuro */
-  color: var(--button-text-color); /* Texto blanco */
+  background-color: var(--button-bg); 
+  color: var(--button-text-color); 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
-  background-color: var(--button-hover-bg); /* Gris oscuro para hover */
+  background-color: var(--button-hover-bg); 
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 button:active {
   transform: scale(0.98);
-  background-color: var(--button-active-bg); /* Gris más oscuro para el clic */
+  background-color: var(--button-active-bg); 
 }
 
 button.btn-primary {
-  background-color: var(--primary-color); /* Marrón oscuro */
+  background-color: var(--primary-color); 
 }
 
 button.btn-primary:hover {
-  background-color: #5a3e2f; /* Marrón más oscuro para el hover */
+  background-color: #5a3e2f; 
 }
 
 button.btn-danger {
-  background-color: #d32f2f; /* Rojo oscuro */
+  background-color: #d32f2f; 
   color: white;
 }
 
 button.btn-danger:hover {
-  background-color: #c62828; /* Rojo más oscuro */
+  background-color: #c62828; 
 }
 
 button.btn-success {
-  background-color: #388e3c; /* Verde oscuro */
+  background-color: #388e3c; 
   color: white;
 }
 
 button.btn-success:hover {
-  background-color: #2c6f2c; /* Verde más oscuro */
-}
+  background-color: #2c6f2c; 
 
 button.btn-secondary {
-  background-color: var(--secondary-color); /* Gris oscuro */
+  background-color: var(--secondary-color);
   color: white;
 }
 
 button.btn-secondary:hover {
-  background-color: #4a3b27; /* Gris más oscuro */
+  background-color: #4a3b27; 
 }
 
 
@@ -188,17 +187,17 @@ button.btn-secondary:hover {
 
 @media (prefers-color-scheme: light) {
   :root {
-    --primary-color: #6f4f37; /* Marrón oscuro */
-    --secondary-color: #424242; /* Gris oscuro */
-    --hover-color: #555; /* Gris medio */
-    --input-bg: #2b2b2b; /* Gris oscuro para inputs */
-    --input-border: #3c3c3c; /* Gris más claro para bordes */
-    --light-bg: #121212; /* Fondo oscuro */
-    --text-color: #e0e0e0; /* Gris claro para texto */
-    --button-bg: #3b3b3b; /* Fondo oscuro para botones */
-    --button-text-color: #fff; /* Blanco para texto de botones */
-    --button-hover-bg: #4a4a4a; /* Gris intermedio para hover de botones */
-    --button-active-bg: #3c3c3c; /* Gris oscuro para cuando el botón está activo */
+    --primary-color: #6f4f37; 
+    --secondary-color: #424242; 
+    --hover-color: #555; 
+    --input-bg: #2b2b2b; 
+    --input-border: #3c3c3c; 
+    --light-bg: #121212; 
+    --text-color: #e0e0e0; 
+    --button-bg: #3b3b3b; 
+    --button-text-color: #fff; 
+    --button-hover-bg: #4a4a4a; 
+    --button-active-bg: #3c3c3c; 
   }
 
   body {
@@ -218,4 +217,5 @@ button.btn-secondary:hover {
   button:hover {
     background-color: var(--button-hover-bg);
   }
+}
 }
